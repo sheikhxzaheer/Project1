@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+section {
+    background-color: rgb(244, 244, 244);
+}
+.home {
+    color: #fff;
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-rows: 10vh 90vh;
+}
+nav {
+    padding: 0 30px;
+    grid-column: 1/4;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.navul {
+    list-style: none;
+    display: flex;
+}
+.nava {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navul :hover {
+    color: #ffc107;
+    transition: 0.5s ease;
+}
+.container {
+    padding: 10px 20px;
+}
+h1 {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+h2 {
+    padding: 20px 0 0 0;
+}
+h3 {
+    letter-spacing: 2px;
+    color: #ffc107;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+}
+p {
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+.myname {
+    letter-spacing: 1px;
+    white-space: pre-line;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myimg {
+    height: 80vh;
+}
+.zaheerimg {
+    height: 90vh;
+}
+.button1,
+.button2 {
+    background-color: #ffc107;
+    padding: 15px 40px;
+    /* color: rgb(255, 255, 255); */
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: rgb(0, 0, 0) 3px solid;
+}
+.button2 {
+    color: black;
+    border: #fff solid 3px;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+}
+.button1:hover {
+    background-color: #e3ae0f;
+
+    transition: 0.5s ease;
+}
+.scroller {
+    color: rgb(171, 162, 162);
+}
+/* .social{
+    background-color: rgb(255, 225, 0);
+} */
+.about {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vcards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.vcontainer {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.vcard {
+    background-color: #fdfdfd;
+    width: 21rem;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+    height: 25rem;
+    margin: 20px;
+    border-radius: 10%;
+    padding: 15px;
+}
+.vcard,
+.pcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    background-color: #ffffff;
+}
+.vimg {
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease; */
+    width: 80px;
+}
+.pricing {
+    background-color: rgb(244, 244, 244);
+    justify-content: center;
+    align-items: center;
+}
+.pcard {
+    background-color: #fdfdfd;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+    width: 30rem;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pul {
+    padding: 10px;
+    list-style: none;
+}
+.pli {
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: flex;
+    margin: 10px;
+}
+i {
+    padding-right: 10px;
+}
+form {
+    margin: 40px;
+}
+.forminput {
+    min-width: 400px;
+    margin: 20px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: #fdfdfd;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 15px;
+}
+.button3 {
+    background-color: #ffc107;
+    padding: 10px 20px;
+    /* color: rgb(255, 255, 255); */
+    font-weight: 600;
+    margin: 20px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: rgb(0, 0, 0) 3px solid;
+}
+textarea {
+    max-width: 400px;
+    max-height: 100px;
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fcontainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 30px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+h6 {
+    font-size: 13px;
+    padding: 10px 0 0 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.copyright {
+    grid-column: 1/6;
+    margin: 50px 0;
+}
+input::after{
+    content: "";
+    background-image: url("/images/person_black_24dp.svg");
+    border: 20px solid black;
+}
+.contactimg{
+    margin: 50px;
+    width: 90%;
+    height: 90%;
+}
