@@ -16,22 +16,27 @@ section {
     grid-template-columns: 50% 40% 10%;
     grid-template-rows: 10vh 90vh;
 }
-nav, .navul{
+nav,
+.navul {
     display: flex;
     align-items: center;
 }
-.myname, .buttoncontainer, .vcontainer, footer{
+.myname,
+.buttoncontainer,
+.vcontainer,
+.skillcontainer,
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 nav {
     padding: 0 30px;
     grid-column: 1/4;
     justify-content: space-between;
 }
-.navul, .pul{
+.navul,
+.pul {
     list-style: none;
     padding: 10px;
 }
@@ -60,7 +65,8 @@ h3 {
     font-weight: 500;
     font-size: 20px;
 }
-p, h3 {
+p,
+h3 {
     letter-spacing: 1px;
     padding: 10px 0;
     font-weight: 600;
@@ -79,7 +85,9 @@ h6 {
 .zaheerimg {
     height: 90vh;
 }
-.button1, .button2, .button3 {
+.button1,
+.button2,
+.button3 {
     background-color: #ffc107;
     padding: 15px 40px;
     border-radius: 8px;
@@ -93,10 +101,6 @@ h6 {
     color: black;
     border: #fff solid 3px;
 }
-.buttoncontainer {
-    display: flex;
-    justify-content: center;
-}
 /* .button1, .button2:hover {
     background-color: #e3ae0f;
     transition: 0.5s ease;
@@ -109,22 +113,35 @@ h6 {
     justify-content: center;
     align-items: center;
 }
+.vcontainer{
+    /* border: 4px solid red; */
+    margin: 10px;
+}
 .vcards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.vcard, .pcard, .forminput{
+.vcard,
+.pcard,
+.forminput,.skillcontainer {
     background-color: #fdfdfd;
     margin: 20px;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
     height: auto;
-
 }
 .vcard {
     max-width: 21rem;
 }
+.npcontainer{
+    width: 200px;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .vimg {
     width: 80px;
 }
@@ -180,12 +197,12 @@ footer {
     grid-column: 1/6;
     margin: 50px 0;
 }
-input::after{
+input::after {
     content: "";
     background-image: url("/images/person_black_24dp.svg");
     border: 20px solid black;
 }
-.contactimg{
+.contactimg {
     margin: 50px;
     width: 90%;
     height: 90%;
